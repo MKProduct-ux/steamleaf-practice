@@ -10,6 +10,7 @@
 - `bot_concept.md` — концепция Telegram-бота STEAMLEAF.
 - `site_description.md` — описание сайта проекта.
 - `project_materials.md` — описание материалов игры STEAMLEAF.
+- `team.md` — информация о команде проекта STEAMLEAF.
 
 ## Назначение документации
 
