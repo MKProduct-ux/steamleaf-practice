@@ -1,1 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEAMLEAF — сайт проекта</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<header class="header">
+    <div class="container header-container">
+        <a href="#top" class="logo">
+            <span class="logo-mark">S</span>
+            <span>STEAMLEAF</span>
+        </a>
+
+        <button class="menu-button" id="menuButton" aria-label="Открыть меню">
+            ☰
+        </button>
+
+        <nav class="nav" id="navMenu">
+            <a href="#about">О проекте</a>
+            <a href="#world">Мир</a>
+            <a href="#characters">Персонажи</a>
+            <a href="#team">Команда</a>
+            <a href="#leaflets">Листовки</a>
+            <a href="#bot">Бот</a>
+            <a href="#resources">Ресурсы</a>
+        </nav>
+
+        <a href="#bot" class="header-button">Открыть терминал</a>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="top">
+        <div class="steam steam-one"></div>
+        <div class="steam steam-two"></div>
+        <div class="steam steam-three"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <p class="section-label">Нарративный квест · RPG · Стимпанк</p>
+
+                <h1>
+                    STEAMLEAF
+                    <span>город, где листовка может изменить рейтинг</span>
+                </h1>
+
+                <p class="hero-description">
+                    Сюжетная игра о молодом промоутере в стимпанк-городе,
+                    где социальный рейтинг SR определяет доступ к районам,
+                    отношение персонажей и возможности героя.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#about" class="button button-primary">Исследовать проект</a>
+                    <a href="#leaflets" class="button button-secondary">Посмотреть листовки</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>4</strong>
+                        <span>района города</span>
+                    </div>
+                    <div>
+                        <strong>SR</strong>
+                        <span>социальный рейтинг</span>
+                    </div>
+                    <div>
+                        <strong>28</strong>
+                        <span>участников команды</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="image-frame hero-image">
+                    <img src="images/hero-city.png" alt="Стимпанк-город STEAMLEAF" onerror="this.style.display='none'">
+                    <span>Стимпанк-город STEAMLEAF</span>
+                </div>
+
+                <div class="floating-card rating-card">
+                    <span>Текущий SR</span>
+                    <strong>450</strong>
+                    <p>Статус: промоутер среднего района</p>
+                </div>
+
+                <div class="floating-card leaflet-card-small">
+                    <span>Новая листовка</span>
+                    <p>«Двоечка» ждёт покупателей</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container two-column">
+            <div class="reveal">
+                <p class="section-label">О проекте</p>
+                <h2>Что такое STEAMLEAF</h2>
+                <p>
+                    STEAMLEAF — разрабатываемая сюжетная игра в жанре нарративного квеста
+                    с элементами RPG. Игрок управляет молодым промоутером, который раздаёт
+                    листовки, выполняет задания, общается с персонажами и влияет на социальный
+                    рейтинг.
+                </p>
+                <p>
+                    Игра сочетает стимпанк-эстетику, социальную сатиру, квестовую структуру
+                    и визуальный стиль, построенный вокруг листовок, бумажных интерфейсов
+                    и индустриальной атмосферы.
+                </p>
+            </div>
+
+            <div class="feature-grid reveal">
+                <article class="feature-card">
+                    <h3>Сюжет</h3>
+                    <p>История героя раскрывается через работу, встречи, поручения и выбор игрока.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Выбор</h3>
+                    <p>Решения игрока влияют на реакции NPC и социальный рейтинг.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Сатира</h3>
+                    <p>Мир игры высмеивает бюрократию, рекламу, статусность и рейтинг.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Атмосфера</h3>
+                    <p>Стимпанк-город, механизмы, пар, листовки и странные персонажи.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="world">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-label">Мир игры</p>
+                <h2>Районы города</h2>
+                <p>
+                    Город STEAMLEAF разделён на районы. Доступ к ним зависит от социального рейтинга SR.
+                </p>
+            </div>
+
+            <div class="district-grid">
+                <article class="district-card reveal">
+                    <div class="district-number">01</div>
+                    <h3>Трущобы</h3>
+                    <p>Район с низким уровнем SR, тяжёлыми условиями и опасной социальной средой.</p>
+                </article>
+
+                <article class="district-card reveal">
+                    <div class="district-number">02</div>
+                    <h3>Средний район</h3>
+                    <p>Стартовая зона героя: дом, офис, магазин «Двоечка» и городские улицы.</p>
+                </article>
+
+                <article class="district-card reveal">
+                    <div class="district-number">03</div>
+                    <h3>Богатый район</h3>
+                    <p>Респектабельная часть города с высоким рейтингом и строгими правилами.</p>
+                </article>
+
+                <article class="district-card reveal">
+                    <div class="district-number">04</div>
+                    <h3>Элитный район</h3>
+                    <p>Зона власти, высокого статуса и персонажей, влияющих на жизнь города.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="characters">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-label">Персонажи</p>
+                <h2>Жители STEAMLEAF</h2>
+                <p>
+                    Персонажи помогают раскрыть город, сатиру, квестовые линии и систему социального рейтинга.
+                </p>
+            </div>
+
+            <div class="character-grid">
+                <article class="character-card reveal">
+                    <div class="image-frame character-image">
+                        <img src="images/character-hero.png" alt="Главный герой" onerror="this.style.display='none'">
+                        <span>Главный герой</span>
+                    </div>
+                    <h3>Главный герой</h3>
+                    <p>Молодой промоутер, через которого игрок знакомится с миром игры.</p>
+                </article>
+
+                <article class="character-card reveal">
+                    <div class="image-frame character-image">
+                        <img src="images/character-moxi.png" alt="Графиня Мокси" onerror="this.style.display='none'">
+                        <span>Графиня Мокси</span>
+                    </div>
+                    <h3>Графиня Мокси</h3>
+                    <p>Богатая дама, связанная с высшим обществом и квестовой линией.</p>
+                </article>
+
+                <article class="character-card reveal">
+                    <div class="image-frame character-image">
+                        <img src="images/character-ray.png" alt="Рэй" onerror="this.style.display='none'">
+                        <span>Рэй</span>
+                    </div>
+                    <h3>Рэй</h3>
+                    <p>Музыкант-киборг, который стремится добиться выступления.</p>
+                </article>
+
+                <article class="character-card reveal">
+                    <div class="image-frame character-image">
+                        <img src="images/character-lilith.png" alt="Лилит" onerror="this.style.display='none'">
+                        <span>Лилит</span>
+                    </div>
+                    <h3>Лилит</h3>
+                    <p>Гадалка, которая может выдать случайное атмосферное предсказание.</p>
+                </article>
+
+                <article class="character-card reveal">
+                    <div class="image-frame character-image">
+                        <img src="images/character-sp67.png" alt="SP-67" onerror="this.style.display='none'">
+                        <span>SP-67</span>
+                    </div>
+                    <h3>SP-67</h3>
+                    <p>Надменный боевой робот, отражающий сатирическую сторону мира.</p>
+                </article>
+
+                <article class="character-card reveal">
+                    <div class="image-frame character-image">
+                        <img src="images/character-valera.png" alt="Валера" onerror="this.style.display='none'">
+                        <span>Валера</span>
+                    </div>
+                    <h3>Валера</h3>
+                    <p>Один из персонажей городского окружения и квестовых взаимодействий.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="team">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-label">Команда</p>
+                <h2>Разработчики проекта</h2>
+                <p>
+                    Над STEAMLEAF работает команда студентов, разделённая по направлениям:
+                    сценарий, гейм-дизайн, программирование, 2D- и 3D-графика, звук,
+                    продвижение и техническая документация.
+                </p>
+            </div>
+
+            <div class="team-groups">
+                <article class="team-group reveal">
+                    <h3>Лидеры проекта</h3>
+                    <p>Плешков Кирилл Максимович, Самодуровский Вячеслав Александрович</p>
+                </article>
+
+                <article class="team-group reveal">
+                    <h3>Сценаристы</h3>
+                    <p>Баранов Пётр, Елецкий Михаил, Попов Дмитрий</p>
+                </article>
+
+                <article class="team-group reveal">
+                    <h3>Программисты</h3>
+                    <p>Николаенков Дмитрий, Плетнева Анна, Попова Елизавета, Субботина Валерия</p>
+                </article>
+
+                <article class="team-group reveal">
+                    <h3>2D-художники</h3>
+                    <p>Козырева Елизавета, Крутяков Максим, Лагутенко Алеся, Саяхова Евгения, Троешестова Арина, Чиркова Вероника</p>
+                </article>
+
+                <article class="team-group reveal">
+                    <h3>3D-художники</h3>
+                    <p>Бирюков Артём, Гагарина Екатерина, Гарченко Дарья, Кныш София, Смирнова Дарья</p>
+                </article>
+
+                <article class="team-group reveal">
+                    <h3>Продвижение и документация</h3>
+                    <p>Менеджеры по продвижению, графические дизайнеры, звукорежиссёр и разработчики технической документации.</p>
+                </article>
+            </div>
+
+            <details class="team-details reveal">
+                <summary>Показать полный состав команды</summary>
+
+                <div class="team-table-wrapper">
+                    <table class="team-table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>ФИО</th>
+                                <th>Группа</th>
+                                <th>Роль</th>
+                                <th>Рабочая группа</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Баранов Пётр Алексеевич</td><td>251-337</td><td>Бригадир</td><td>Сценарист</td></tr>
+                            <tr><td>2</td><td>Бирюков Артём Александрович</td><td>251-335</td><td>Бригадир</td><td>3D-художник</td></tr>
+                            <tr><td>3</td><td>Бородина Екатерина Евгеньевна</td><td>251-334</td><td>Бригадир</td><td>Менеджер по продвижению</td></tr>
+                            <tr><td>4</td><td>Власова Анастасия Николаевна</td><td>251-335</td><td>Бригадир</td><td>Менеджер по продвижению</td></tr>
+                            <tr><td>5</td><td>Гагарина Екатерина Юрьевна</td><td>251-334</td><td>Бригадир</td><td>3D-художник</td></tr>
+                            <tr><td>6</td><td>Гарченко Дарья Васильевна</td><td>251-334</td><td>Бригадир</td><td>3D-художник</td></tr>
+                            <tr><td>7</td><td>Герин Даниил Алексеевич</td><td>251-335</td><td>Бригадир</td><td>Разработчик технической документации</td></tr>
+                            <tr><td>8</td><td>Елецкий Михаил Сергеевич</td><td>251-338</td><td>Бригадир</td><td>Сценарист</td></tr>
+                            <tr><td>9</td><td>Каримбаева Анора Еркин кызы</td><td>251-335</td><td>Бригадир</td><td>Графический дизайнер</td></tr>
+                            <tr><td>10</td><td>Кинёв Максим Юрьевич</td><td>251-336</td><td>Бригадир</td><td>Графический дизайнер</td></tr>
+                            <tr><td>11</td><td>Кныш София Владимировна</td><td>251-336</td><td>Бригадир</td><td>3D-художник</td></tr>
+                            <tr><td>12</td><td>Козырева Елизавета Денисовна</td><td>251-333</td><td>Бригадир</td><td>2D-художник</td></tr>
+                            <tr><td>13</td><td>Кономанина Алиса Петровна</td><td>251-336</td><td>Бригадир</td><td>Звукорежиссёр</td></tr>
+                            <tr><td>14</td><td>Крутяков Максим Евгеньевич</td><td>251-336</td><td>Бригадир</td><td>2D-художник</td></tr>
+                            <tr><td>15</td><td>Лагутенко Алеся Вадимовна</td><td>251-336</td><td>Бригадир</td><td>2D-художник</td></tr>
+                            <tr><td>16</td><td>Лыхин Артём Андреевич</td><td>251-338</td><td>Бригадир</td><td>Разработчик технической документации</td></tr>
+                            <tr><td>17</td><td>Морев Андрей Владимирович</td><td>251-336</td><td>Бригадир</td><td>Менеджер по продвижению</td></tr>
+                            <tr><td>18</td><td>Николаенков Дмитрий Сергеевич</td><td>251-334</td><td>Бригадир</td><td>Программист</td></tr>
+                            <tr><td>19</td><td>Плетнева Анна Сергеевна</td><td>251-334</td><td>Бригадир</td><td>Программист</td></tr>
+                            <tr><td>20</td><td>Плешков Кирилл Максимович</td><td>251-334</td><td>Лидер проекта</td><td>Гейм-дизайнер</td></tr>
+                            <tr><td>21</td><td>Попов Дмитрий Игоревич</td><td>251-337</td><td>Бригадир</td><td>Сценарист</td></tr>
+                            <tr><td>22</td><td>Попова Елизавета Валерьевна</td><td>251-334</td><td>Бригадир</td><td>Программист</td></tr>
+                            <tr><td>23</td><td>Самодуровский Вячеслав Александрович</td><td>251-334</td><td>Лидер проекта</td><td>Гейм-дизайнер</td></tr>
+                            <tr><td>24</td><td>Саяхова Евгения Алексеевна</td><td>251-337</td><td>Бригадир</td><td>2D-художник</td></tr>
+                            <tr><td>25</td><td>Смирнова Дарья Павловна</td><td>251-334</td><td>Бригадир</td><td>3D-художник</td></tr>
+                            <tr><td>26</td><td>Субботина Валерия Романовна</td><td>251-334</td><td>Бригадир</td><td>Программист</td></tr>
+                            <tr><td>27</td><td>Троешестова Арина Сергеевна</td><td>251-334</td><td>Бригадир</td><td>2D-художник</td></tr>
+                            <tr><td>28</td><td>Чиркова Вероника Сергеевна</td><td>251-333</td><td>Бригадир</td><td>2D-художник</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <section class="section" id="leaflets">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-label">Листовки</p>
+                <h2>Рекламная культура города</h2>
+                <p>
+                    Листовки — важная часть визуального стиля, геймплея и юмора STEAMLEAF.
+                </p>
+            </div>
+
+            <div class="leaflet-gallery">
+                <article class="leaflet-card reveal">
+                    <div class="image-frame leaflet-image">
+                        <img src="images/leaflet-1.png" alt="Листовка STEAMLEAF" onerror="this.style.display='none'">
+                        <span>Листовка №1</span>
+                    </div>
+                    <h3>Городская реклама</h3>
+                    <p>Листовки показывают заведения, услуги и абсурдную бюрократию мира.</p>
+                </article>
+
+                <article class="leaflet-card reveal">
+                    <div class="image-frame leaflet-image">
+                        <img src="images/leaflet-2.png" alt="Листовка магазина" onerror="this.style.display='none'">
+                        <span>Листовка №2</span>
+                    </div>
+                    <h3>Игровой предмет</h3>
+                    <p>Игрок раздаёт листовки NPC и получает разные реакции.</p>
+                </article>
+
+                <article class="leaflet-card reveal">
+                    <div class="image-frame leaflet-image">
+                        <img src="images/leaflet-3.png" alt="Юмористическая листовка" onerror="this.style.display='none'">
+                        <span>Листовка №3</span>
+                    </div>
+                    <h3>Юмор и сатира</h3>
+                    <p>Через листовки передаётся ироничный тон проекта.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="devlog">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-label">Журнал разработки</p>
+                <h2>Ход работы</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <span>Этап 1</span>
+                    <h3>Создание репозитория</h3>
+                    <p>Подготовлена структура GitHub-репозитория для проектной практики.</p>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <span>Этап 2</span>
+                    <h3>Документация</h3>
+                    <p>Оформлены материалы об игре, сайте, Telegram-боте и команде проекта.</p>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <span>Этап 3</span>
+                    <h3>Сайт проекта</h3>
+                    <p>Создаётся интерактивная страница с разделами, анимациями и материалами STEAMLEAF.</p>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <span>Этап 4</span>
+                    <h3>Telegram-бот</h3>
+                    <p>Планируется разработка интерактивного бота в формате терминала промоутера.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bot-section" id="bot">
+        <div class="container bot-container">
+            <div class="reveal">
+                <p class="section-label">Telegram-бот</p>
+                <h2>Терминал промоутера</h2>
+                <p>
+                    Telegram-бот STEAMLEAF создаётся как интерактивное дополнение к игре.
+                    Он знакомит пользователя с миром проекта, персонажами, районами,
+                    листовками и системой социального рейтинга SR.
+                </p>
+
+                <div class="bot-actions">
+                    <a href="https://t.me/steamleaf_bot" class="button button-primary" target="_blank">Открыть Telegram-бота</a>
+                    <button class="button button-secondary" id="ratingButton">Проверить SR</button>
+                </div>
+
+                <p class="rating-result" id="ratingResult">
+                    Ваш текущий статус: промоутер среднего района.
+                </p>
+            </div>
+
+            <div class="terminal reveal">
+                <div class="terminal-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="terminal-body">
+                    <p>&gt; Запуск STEAMLEAF Bot...</p>
+                    <p>&gt; Пользователь найден: PROMO-USER</p>
+                    <p>&gt; SR: 450</p>
+                    <p>&gt; Доступный район: Средний район</p>
+                    <p class="terminal-highlight">&gt; Получена новая листовка</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section resources-section" id="resources">
+        <div class="container">
+            <div class="section-heading reveal">
+                <p class="section-label">Ресурсы</p>
+                <h2>Технологии и ссылки</h2>
+                <p>Материалы, инструменты и социальные страницы проекта.</p>
+            </div>
+
+            <div class="resource-list reveal">
+                <a href="https://github.com/MKProduct-ux/steamleaf-practice" target="_blank">GitHub</a>
+                <a href="https://t.me/steamleaf_bot" target="_blank">Telegram</a>
+                <a href="https://vk.com/" target="_blank">VK</a>
+                <a href="https://www.python.org/" target="_blank">Python</a>
+                <a href="https://core.telegram.org/bots/api" target="_blank">Telegram Bot API</a>
+                <a href="https://developer.mozilla.org/ru/docs/Web/HTML" target="_blank">HTML</a>
+                <a href="https://developer.mozilla.org/ru/docs/Web/CSS" target="_blank">CSS</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div>
+            <a href="#top" class="footer-logo">STEAMLEAF</a>
+            <p>
+                Проектная практика 2025–2026. Сайт и Telegram-бот для игры STEAMLEAF.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#about">О проекте</a>
+            <a href="#team">Команда</a>
+            <a href="#bot">Telegram-бот</a>
+            <a href="#resources">Ресурсы</a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/MKProduct-ux/steamleaf-practice" target="_blank">GitHub</a>
+            <a href="https://t.me/steamleaf_bot" target="_blank">Telegram</a>
+            <a href="https://vk.com/" target="_blank">VK</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const menuButton = document.getElementById('menuButton');
+    const navMenu = document.getElementById('navMenu');
+
+    menuButton.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
+    });
+
+    const ratingButton = document.getElementById('ratingButton');
+    const ratingResult = document.getElementById('ratingResult');
+
+    const ratings = [
+        'Ваш SR: 120. Доступ открыт только к трущобам.',
+        'Ваш SR: 450. Вы промоутер среднего района.',
+        'Ваш SR: 720. Богатый район начал вас замечать.',
+        'Ваш SR: 910. Элитный район делает вид, что вас не существует.',
+        'Ваш SR: 1000. Система подозревает, что вы слишком успешны.'
+    ];
+
+    ratingButton.addEventListener('click', () => {
+        const randomIndex = Math.floor(Math.random() * ratings.length);
+        ratingResult.textContent = ratings[randomIndex];
+        ratingResult.classList.add('rating-animate');
+
+        setTimeout(() => {
+            ratingResult.classList.remove('rating-animate');
+        }, 500);
+    });
+</script>
+
+</body>
+</html>
