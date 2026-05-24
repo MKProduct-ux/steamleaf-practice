@@ -1241,3 +1241,11 @@ p {
         padding: 12px;
     }
 }
+
+.character-image {
+    background: #ffffff !important;
+}
+
+.character-image img {
+    background: #ffffff !important;
+}
