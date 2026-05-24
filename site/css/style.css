@@ -1142,3 +1142,23 @@ p {
         padding: 12px;
     }
 }
+
+#devlog .timeline {
+    margin-bottom: 70px;
+}
+
+#devlog .section-heading {
+    margin-bottom: 44px;
+}
+
+#devlog .timeline + .section-heading {
+    margin-top: 80px;
+}
+
+#devlog .section-heading h3 {
+    display: inline-block;
+    padding: 14px 24px;
+    background: rgba(217, 192, 139, 0.18);
+    border: 2px solid rgba(222, 205, 170, 0.4);
+    border-radius: 14px;
+}
