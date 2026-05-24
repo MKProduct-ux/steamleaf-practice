@@ -1162,3 +1162,29 @@ p {
     border: 2px solid rgba(222, 205, 170, 0.4);
     border-radius: 14px;
 }
+
+.video-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 14px;
+    border: 3px solid var(--line);
+    border-radius: 24px;
+    background: rgba(222, 205, 170, 0.82);
+    box-shadow: 10px 10px 0 rgba(21, 18, 14, 0.28);
+}
+
+.video-wrapper iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 16px;
+    background: #12100d;
+}
+
+.video-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
