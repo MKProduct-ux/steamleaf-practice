@@ -397,48 +397,102 @@ p {
     font-size: 14px;
 }
 
-/* IMAGE PLACEHOLDERS */
-
-.hero-visual {
-    position: relative;
-    min-height: 520px;
-}
+/* IMAGE FRAMES */
 
 .image-frame {
     position: relative;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     border: 3px solid var(--line);
-    background:
-        linear-gradient(135deg, rgba(222, 205, 170, 0.9), rgba(217, 192, 139, 0.82)),
-        var(--paper);
+    background: #f4ecd7;
     box-shadow:
         12px 12px 0 rgba(21, 18, 14, 0.34),
         inset 0 0 40px rgba(21, 18, 14, 0.05);
 }
 
-.image-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* Убираем старые надписи поверх изображений */
+.image-frame span,
+.hero-image span,
+.character-image span,
+.leaflet-image span,
+.district-image span,
+.image-frame p,
+.hero-image p,
+.character-image p,
+.leaflet-image p,
+.district-image p {
+    display: none !important;
 }
 
-.image-frame span {
-    position: absolute;
-    color: rgba(21, 18, 14, 0.68);
-    font-weight: 900;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 20px;
+.image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-visual {
+    position: relative;
+    min-height: 560px;
 }
 
 .hero-image {
     width: 100%;
-    min-height: 520px;
+    height: 560px;
+    min-height: 560px;
     border-radius: 28px;
     animation: floatImage 5s ease-in-out infinite;
 }
+
+.hero-image img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.district-image {
+    width: 100%;
+    height: 170px;
+    min-height: 170px;
+    margin-bottom: 22px;
+    border-radius: 18px;
+}
+
+.district-image img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.character-image {
+    width: 100%;
+    height: 390px;
+    min-height: 390px;
+    padding: 14px;
+    margin-bottom: 22px;
+    border-radius: 18px;
+}
+
+.character-image img {
+    object-fit: contain;
+    object-position: center;
+}
+
+.leaflet-image {
+    width: 100%;
+    height: 390px;
+    min-height: 390px;
+    padding: 10px;
+    margin-bottom: 22px;
+    border-radius: 18px;
+}
+
+.leaflet-image img {
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+}
+
+/* FLOATING CARDS */
 
 .floating-card {
     position: absolute;
@@ -597,6 +651,12 @@ p {
     padding: 28px;
 }
 
+.character-card,
+.leaflet-card {
+    display: flex;
+    flex-direction: column;
+}
+
 .feature-card:hover,
 .district-card:hover,
 .character-card:hover,
@@ -634,17 +694,6 @@ p {
     background: var(--gold);
 }
 
-.character-image,
-.leaflet-image {
-    min-height: 230px;
-    margin-bottom: 22px;
-    border-radius: 18px;
-}
-
-.leaflet-image {
-    min-height: 320px;
-}
-
 /* TEAM TABLE */
 
 .team-details {
@@ -657,10 +706,6 @@ p {
     color: var(--gold);
     font-weight: 900;
     font-size: 18px;
-}
-
-.section:not(.dark-section):not(.bot-section) .team-details summary {
-    color: var(--ink);
 }
 
 .team-table-wrapper {
@@ -708,6 +753,54 @@ p {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+#devlog .timeline {
+    margin-bottom: 70px;
+}
+
+#devlog .section-heading {
+    margin-bottom: 44px;
+}
+
+#devlog .timeline + .section-heading {
+    margin-top: 80px;
+}
+
+#devlog .section-heading h3 {
+    display: inline-block;
+    padding: 14px 24px;
+    background: rgba(217, 192, 139, 0.18);
+    border: 2px solid rgba(222, 205, 170, 0.4);
+    border-radius: 14px;
+}
+
+/* VIDEO */
+
+.video-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 14px;
+    border: 3px solid var(--line);
+    border-radius: 24px;
+    background: rgba(222, 205, 170, 0.82);
+    box-shadow: 10px 10px 0 rgba(21, 18, 14, 0.28);
+}
+
+.video-wrapper iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 16px;
+    background: #12100d;
+}
+
+.video-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
 }
 
 /* BOT */
@@ -921,7 +1014,7 @@ p {
     animation-delay: 3s;
 }
 
-/* REVEAL ANIMATION */
+/* REVEAL */
 
 .reveal {
     opacity: 0;
@@ -1017,7 +1110,7 @@ p {
     }
 
     .hero-visual {
-        min-height: 420px;
+        min-height: auto;
     }
 
     .district-grid,
@@ -1101,13 +1194,25 @@ p {
         width: 100%;
     }
 
-    .hero-visual {
-        min-height: 360px;
+    .hero-image {
+        height: 520px;
+        min-height: 520px;
+        border-radius: 24px;
     }
 
-    .hero-image {
-        min-height: 360px;
-        border-radius: 24px;
+    .district-image {
+        height: 210px;
+        min-height: 210px;
+    }
+
+    .character-image {
+        height: 380px;
+        min-height: 380px;
+    }
+
+    .leaflet-image {
+        height: 390px;
+        min-height: 390px;
     }
 
     .floating-card {
@@ -1131,90 +1236,8 @@ p {
         text-stroke: 0;
     }
 
-    .dark-section h2,
-    .bot-section h2 {
-        -webkit-text-stroke: 0;
-        text-stroke: 0;
-    }
-
     .team-table th,
     .team-table td {
         padding: 12px;
     }
-}
-
-#devlog .timeline {
-    margin-bottom: 70px;
-}
-
-#devlog .section-heading {
-    margin-bottom: 44px;
-}
-
-#devlog .timeline + .section-heading {
-    margin-top: 80px;
-}
-
-#devlog .section-heading h3 {
-    display: inline-block;
-    padding: 14px 24px;
-    background: rgba(217, 192, 139, 0.18);
-    border: 2px solid rgba(222, 205, 170, 0.4);
-    border-radius: 14px;
-}
-
-.video-wrapper {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 14px;
-    border: 3px solid var(--line);
-    border-radius: 24px;
-    background: rgba(222, 205, 170, 0.82);
-    box-shadow: 10px 10px 0 rgba(21, 18, 14, 0.28);
-}
-
-.video-wrapper iframe {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-    border-radius: 16px;
-    background: #12100d;
-}
-
-.video-link {
-    display: flex;
-    justify-content: center;
-    margin-top: 28px;
-}
-
-.character-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.character-image {
-    width: 100%;
-    height: 390px;
-    min-height: 390px;
-    padding: 14px;
-    background: #f4ecd7;
-    border-radius: 18px;
-}
-
-.character-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-}
-
-/* чтобы карточки персонажей были одинаковой высоты */
-.character-card h3 {
-    margin-top: 18px;
-}
-
-.character-card p {
-    margin-top: 6px;
 }
